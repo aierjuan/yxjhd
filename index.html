@@ -1,0 +1,250 @@
+ <!DOCTYPE HTML>
+<html>
+	<head>
+	<base href="http://event.m.shihou.tv/yxjhd/"/>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content="狮吼,狮吼直播,手游直播,双投屏直播" />
+	<meta name="description" content="狮吼 - 4亿手游玩家的直播平台、狮吼是游戏多旗下手游直播平台，支持双投屏直播的移动端平台，边玩边播，分享快乐！狮吼直播，随时随地录屏直播，语音弹幕独特玩法，各路主播游戏大神齐聚；电竞赛事、综艺娱乐、户外精彩，一切改变尽在 狮吼- 4亿手游玩家的直播平台。" />
+	<title>狮吼2018元宵灯会</title>
+    <link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/css/base.css" />
+	<link rel="stylesheet" href="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/css/style.css" />
+	<script src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/js/jquery-3.1.0.min.js" ></script>
+    <script src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/js/jquery.rotate.min.js"></script>
+    <script src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/js/index.js"></script>
+	<script src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/js/util.js"></script>
+    <script language="javascript">
+    $(function()
+    {
+        var time = 3;
+        $(".share").click(function()
+        {
+            if(from_user_id=="0")
+            {
+                $(".pop").fadeIn(200);
+                setTimeout('$(".pop").hide()', time*1000);
+            }
+            else
+            {
+                var web_share = {
+                    "qq": {
+                        "url": share_url,
+                        "img": share_icon,
+                        "title": share_title,
+                        "subtitle": share_desc
+                    },
+                    "wx_person": {
+                        "url": share_url,
+                        "img": share_icon,
+                        "title": share_title,
+                        "subtitle": share_desc
+                    },
+                    "wx_group": {
+                        "url": share_url,
+                        "img": share_icon,
+                        "title": share_title,
+                        "subtitle": share_desc
+                    },
+                    "wb": {
+                        "url": share_url,
+                        "img": share_icon,
+                        "title": share_title,
+                        "subtitle": share_desc
+                    }
+                };
+
+                if (typeof(window.lion) != "undefined" && typeof(window.lion.web_share) == 'function')
+                {
+                    window.lion.web_share(JSON.stringify(web_share));
+                }
+            }
+        });
+
+    });
+    </script>
+	</head>
+<body>
+
+    <div class="wrap">
+    	
+    	<div class="boxImg">
+        	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/yxj1.jpg" />
+            <a class="share"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/share.png"/></a>
+        </div> 
+        <img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/yxj2.jpg" />
+		<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/yxj3.jpg"/>
+        <div class="bg2">
+            <!--未登录-->
+            <div class="Nenroll" id="nologinLoveQybf">
+                <img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/font.png"/>
+                <p>请登录后查看个人排行哦~</p>
+                <a href="shihoutv://route?jump_type=120">立即登录</a>
+            </div>
+            <!--登录-->
+            <div class="enroll"  id="loginLoveQybf" style="display:none;" >
+            	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/font.png"/>
+                <a><em>元宵收入榜：<span class="sr">未上榜</span></em><em>元宵贡献榜：<span class="gx">未上榜</span></em></a>
+            </div>
+            <div class="phb1">
+                <ul id="phbQybf"></ul>
+                <a class="more"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/more.png"/></a>
+        	</div>
+            <img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/hdsrb.png"/>
+            <!--未登录-->
+            <div class="Nenroll" id="nologinLoveQybf">
+            	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/font.png"/>
+                <p>请登录后查看个人排行版哦</p>
+                <a href="shihoutv://route?jump_type=120">立即登录</a>
+            </div>
+            <!--登录-->
+            <div class="enroll"  id="loginLoveQybf" style="display:none;">
+            	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/font.png"/>
+                <a><em>花灯收入榜：<span class="sr">未上榜</span></em><em>花灯贡献榜：<span class="gx">未上榜</span></em></a>
+            </div>
+            <div class="phb1">
+                <ul id="phbQgqc"></ul>
+                <a class="more"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/more.png"/></a>
+        	</div>
+        <img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/line2.jpg"/>	
+        </div>
+        <a class="font3 phbgz" ><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/font1.png"/></a>
+        <div class="bg3">
+        	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/sahua.png"/>
+        	<div class="ly-plate">
+                <div class="rotate-bg"></div>
+                <div class="lottery-star">
+                	<a class="playbtn"  title="开始抽奖"></a>
+                </div>
+                <div class="cjText">
+                	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/cj.png" >
+                    <a>剩余<em>0</em>次</a>
+                </div>
+            </div>
+             <!--用户中奖信息-->
+             
+            <div class="Carousel">
+                <div class="bd">
+                    <ul></ul>
+            	</div>   
+       		 </div> 
+             <div class="phb">
+             	<a class="font3 reward" ><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/font2.png"/></a>
+             </div>
+       
+             <img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/yxj5.jpg"/>
+    	</div>
+	<div class="pop">请登录后再来参加活动吧~</div>
+    <div class="number">当前剩余次数不足</div>
+    <div class="vmask"></div>
+     <!--中奖-->
+    <div class="zj zjtc">
+    	<div class="zjtcin">
+        	<a class="zjTitle"></a>
+        	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/zj.png"/>
+        	<a class="close"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/close.png"/></a>
+        </div>
+    </div>
+    <!--勋章-->
+    <div class="xz zjtc">
+        <div class="zjtcin">
+            <a class="zjTitle"></a>
+            <img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/xz.png"/>
+            <a class="close"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/close.png"/></a>
+        </div>
+    </div>
+
+
+
+	<!--排行版规则弹窗--->
+    <div class="tcbg phbRule">
+    	<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/phbtantop.jpg"/>
+		<div class="tanbg">
+        <div class="rule">
+        	<h2 class="title">排行榜规则</h2></p>
+        	<p>1.新礼物上线：“元宵”、“花灯”，价值10狮牙；</p> 
+			<p>2.活动期间，排行榜根据主播收取礼物价值（数量）多少依次排序；</p>
+            <h2 class="title">主播奖励</h2>
+            <p>1.抢到元宵榜前十的主播可获得奖励</p>
+            <p>第1名：“元宵”专属勋章*7天+狮子侠*1</p>
+            <p>第2名：“元宵”专属勋章*5天+皇冠*1</p>
+            <p>第3名：“元宵”专属勋章*3天+宝箱*10</p>
+            <p>第4~10名：元宵”专属勋章*3天</p> 
+            <p>2.抢到花灯榜前十的主播可获得奖励</p>
+            <p>第1名：“花灯”专属勋章*7天+狮子侠*1</p>
+            <p>第2名：“花灯”专属勋章*5天+皇冠*1</p>
+            <p>第3名：“花灯”专属勋章*3天+宝箱*10</p>
+            <p>第4~10名：“花灯”专属勋章*3天</p>
+			<h2 class="title">用户奖励</h2>
+            <p>1.贡献元宵礼物前十的用户可获得奖励；</p>
+            <p>贡献第1名：“狗年”限定勋章*10天</p> 
+            <p>贡献第2名：“狗年”限定勋章*7天</p>
+            <p>贡献第3名：“狗年”限定勋章*5天</p>
+            <p>贡献第4-10名：“狗年”限定勋章*3天</p>
+            <p>2.贡献花灯礼物前十的用户可获得奖励；</p>
+            <p>贡献第1名：“狗年”限定勋章*10天</p> 
+            <p>贡献第2名：“狗年”限定勋章*7天</p>
+            <p>贡献第3名：“狗年”限定勋章*5天</p>
+            <p>贡献第4-10名：“狗年”限定勋章*3天</p>
+        </div>
+        <a class="close"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/know.png"/></a>
+		</div>
+		<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/tanbottom.jpg"/>
+    </div>
+    <!--大转盘弹窗--->
+    <div class="tcbg dzprule">
+		<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/dzptantop.jpg"/>
+		<div class="tanbg">
+			<p>1.活动期间，每天分享一次此活动，并邀请好友点击，可获得1次抽奖机会；（每个用户每天只可领取1次）</p>
+			<p>2.活动期间，分享此活动，并邀请好友下载狮吼，每邀请1个好友注册并登录狮吼，即可获得3次抽奖机会；</p>
+			<p>3.每送出66个“元宵”或66个“花灯”即可获取一次抽奖机会，不限定抽奖次数；</p>
+			<a class="close"><img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/know.png"/></a>
+		</div>
+		<img src="http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/tanbottom.jpg"/>
+    </div> 
+</body>
+</html>
+<script>
+$( function(){
+	$(".phb1").each(function()
+	{
+		var zk    = $(this).find(".more");
+		var Onclick = true;
+		zk.bind("click",function()
+		{
+			if(Onclick){
+				$(this).find("img").attr("src","http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/shouqi.png");
+				Onclick = false;	
+			}else{	
+				$(this).find("img").attr("src","http://resource.youxiduo.com/special/shihou/promoter/yxjhd/static/img/more.png");
+				Onclick = true;	
+			}
+			$(this).siblings("ul").find(".hide").toggle(300);
+		});
+	})
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* 狮吼TV */
+
+body      { margin:0; font-size:14px; font-family:"黑体"; background:#7f1420; background-size:100% auto; color:#fff; }
+.wrap img { width:100%; display:block; }
+.boxImg   { position:relative; width:100%; overflow:hidden; }
+.hand       { width:14%; position:absolute; right:30%; top:36%; z-index:3; animation:downup 1.5s infinite ease-in-out; -webkit-animation:downup 1.5s infinite ease-in-out; }
+.btnDl   { margin-left:-45%; width:90%; display:block; position:absolute; left:50%; top:0%; z-index:3; }
+
+/**上下*/
+@keyframes downup
+{
+	0%       { -webkit-transform:translate(15px,15px); opacity:1; }
+	50%      { -webkit-transform:translate(0,0); opacity:1; }
+	100%     { -webkit-transform:translate(15px,15px); opacity:1; }
+}
+
+@-webkit-keyframes downup
+{
+	0%      { -webkit-transform:translate(15px,15px); opacity:1; }
+	50%     { -webkit-transform:translate(0,0); opacity:1; }
+	100%    { -webkit-transform:translate(15px,15px); opacity:1; }
+}
